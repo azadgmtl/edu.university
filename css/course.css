@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Nunito&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Andika', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.section_heading
+{
+    text-align: center;
+
+}
+
+.section_heading h2
+{
+    color: #07294d;
+    font-size: 45px;
+    line-height: 45px;
+    padding: 30px 0;
+    text-transform: capitalize;
+}
+
+/* Header CSS Started from here*/
+.header
+{
+    background-color: #fff;
+    z-index: 9999;
+    top: 0;
+    position: sticky;
+}
+
+.header .navbar img
+{
+    width: 160px;
+    height: 55px;
+}
+
+
+
+.header .menu-navbar-nav li
+{
+    margin: 0 8px;
+}
+
+.header .menu-navbar-nav li ul li
+{
+    margin: 15px 0;
+}
+
+.header .menu-navbar-nav li:hover ul li a
+{
+    background: none;
+}
+
+.header .menu-navbar-nav li:hover ul
+{
+    border: none;
+    box-shadow: -4px 2px 61px -18px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -4px 2px 61px -18px rgba(0,0,0,0.51);
+    -moz-box-shadow: -4px 2px 61px -18px rgba(0,0,0,0.51);
+}
+
+.header .menu-navbar-nav li a
+{
+    font-size: 18px; 
+    line-height: 17px;
+    color: #07294d;
+    transition: all .5s ease;
+}
+
+.header .menu-navbar-nav li a:hover
+{
+    color: #FFC600;
+  
+}
+
+.header .menu-navbar-nav li a:hover .fa-angle-down
+{
+    transform: rotate(180deg);
+    transition: .6s;
+}
+
+
+.header .menu-navbar-nav li a .fa-plus
+{
+    display: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* Header CSS Ended Here  */
+
+
+
+
+
+
+/* Courses Banner Section's CSS Started from Here  */
+.courses_banner
+{
+    background: url(../Images/courses_banner.png);
+    min-height: 251px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.courses_banner::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #07294d;
+    z-index: -1;
+    opacity: .7;
+    
+}
+
+.banner_content h3
+{
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.banner_content a,
+.banner_content span
+{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Courses Banner Section's CSS Ended Here  */
+
+
+
+
+
+/* Courses Details Section's CSS Started from Here  */
+.courses
+{
+    background-color: #f5f5f5;
+    padding: 150px 0;
+}
+
+.course_info_title,
+.course_info_input
+{
+    margin-top: -60px;
+    padding-bottom: 40px;
+}
+
+.course_info_title h3
+{
+    color: #07294d;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: bold;letter-spacing: .7px;
+}
+
+.course_info_input
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.course_info_input input
+{
+    width: 350px;
+    height: 45px;
+    padding: 20px;
+    border: 1px solid #d1bfbf;
+    border-radius: 5px;
+}
+
+.course_info_input input:focus
+{
+    border-radius: 1px solid #ff3412;
+}
+
+.course_info_input plaeholder,
+.course_info_input a
+{
+
+    margin-left: -30px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.courses .image
+{
+    overflow: hidden;
+}
+
+.courses .image img
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .7s;
+}
+
+.courses .image img:hover
+{
+    transform: scale(1.0999); 
+    background-color: #07294d;
+    opacity: .9;
+}
+
+
+.course_details 
+{
+    margin-left: 30px;
+}
+
+.course_details a
+{
+    padding: 5px 18px;
+    background-color: #FFC600;
+    color: #4b5158;
+    line-height: 27px;
+    font-size: 15px;
+}
+
+.course_details span
+{
+    color: #059de9;
+    font-size: 15px; line-height: 27px;
+}
+
+.course_details h4 
+{
+    margin: 20px 0 20px -15px;
+}
+
+.course_details h4 a
+{
+    background: none;
+    color: #333333;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.course_details h4 a:hover
+{
+    color: #FFC600;
+    transition: .5s;
+}
+
+.course_information
+{
+    margin: 20px 0;
+}
+
+.course_information i
+{
+    color: #FFC600;
+    font-size: 15px;
+}
+
+.course_information span
+{
+    color: #333333;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.course_details p
+{
+    color: #666666;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .6px;
+}
+
+.course_details .pricing_and_button
+{
+    margin: 5px 0;
+}
+
+.course_details .pricing_and_button span
+{
+    color: #333333;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+
+.course_details .pricing_and_button .course_btn
+{
+    padding: 6px 17px;
+    border-radius: 7px;
+}
+
+/* Courses Details Section's CSS Ended Here  */
+
+
+
+
+/* Footer Section's CSS Started from Here  */
+
+.footer
+{
+    padding: 50px 0;
+    background-color: #021d3a;
+}
+
+.footer_intro
+{
+    margin-top: -10px;
+}
+
+.footer_intro img
+{
+    margin: 25px 0;
+}
+
+.footer_intro p
+{
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.2px;
+}
+
+.supports
+{
+    margin-top: 25px;
+}
+
+.supports h4
+{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.supports li
+{
+    list-style: none;
+    margin-bottom: 30px;
+    color: #fff;
+    
+}
+
+.supports li a
+{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.supports li a:hover,
+.supports li i:hover
+{
+    color: #ecb101;
+}
+
+.resources
+{
+    margin-top: 25px;
+}
+
+.resources h4
+{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.resources li
+{
+    list-style: none;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.resources li a
+{
+    
+    color: #fff;
+    margin-left: 10px;
+}
+
+.resources li a:hover,
+.resources li i:hover
+{
+    color: #ecb101;
+}
+
+.recent_posts
+{
+    margin-top: 18px;
+}
+
+.recent_posts h4
+{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.recent_post_content .image img
+{
+    width: 80px;
+    height: 85px;
+    border-radius: 12px;
+}
+
+.recent_post_content .content
+{
+    margin-left: 20px;
+}
+
+
+.recent_post_content .content h5 a
+{
+    color: #dedede;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recent_post_content .content h5 a:hover
+{
+    color: #ff3412;
+    transition: .6s;
+}
+
+
+.recent_post_content .content p
+{
+    color: #dedede;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.last_footer
+{
+    background-color: #05274b;
+    padding: 30px;
+}
+
+.last_footer h3
+{
+    color: #fff;
+    font-size: 22px;
+}
+
+.last_footer h3 > i
+{
+    color: #54b551;
+}
+
+.last_footer h3 > a
+{
+    color: #ecb101;
+    font-size: 20px;
+}
+
+
+
+
+
+#top_scroll
+{
+    position: fixed;
+    top: -100%;
+    right:2rem;
+    padding: 10px 18px;
+    font-size: 30px;
+    background: #ff4500;
+    color:#fff;
+    border-radius: 6px;
+    transition: 1s linear;
+    z-index: 1000;
+}
+
+#top_scroll.active
+{
+    top:calc(100% - 6rem)
+}
+
+
+
+
+/* Courses Details Section's CSS Ended Here  */
+

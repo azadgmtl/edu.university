@@ -1,0 +1,735 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Nunito&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Andika', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.section_heading
+{
+    text-align: center;
+
+}
+
+.section_heading h2
+{
+    color: #07294d;
+    font-size: 45px;
+    line-height: 45px;
+    padding: 30px 0;
+    text-transform: capitalize;
+}
+
+/* Header CSS Started from here*/
+.header
+{
+    background-color: #fff;
+    z-index: 9999;
+    top: 0;
+    position: sticky;
+}
+
+.header .navbar img
+{
+    width: 160px;
+    height: 55px;
+}
+
+
+
+.header .menu-navbar-nav li
+{
+    margin: 0 8px;
+}
+
+
+.header .menu-navbar-nav li ul li
+{
+    margin: 15px 0;
+}
+
+
+.header .menu-navbar-nav li:hover ul li a
+{
+    background: none;
+}
+
+.header .menu-navbar-nav li:hover ul
+{
+    border: none;
+    box-shadow: -4px 2px 61px -18px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -4px 2px 61px -18px rgba(0,0,0,0.51);
+    -moz-box-shadow: -4px 2px 61px -18px rgba(0,0,0,0.51);
+}
+
+.header .menu-navbar-nav li a
+{
+    font-size: 17px; 
+    color: #07294d;
+    transition: all .5s ease;
+}
+
+.header .menu-navbar-nav li a:hover
+{
+    color: #FFC600;
+  
+}
+
+.header .menu-navbar-nav li a:hover .fa-angle-down
+{
+    transform: rotate(180deg);
+    transition: .6s;
+}
+
+
+.header .menu-navbar-nav li a .fa-plus
+{
+    display: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* Header CSS Ended Here  */
+
+
+
+
+
+/* Course Single Banner Section's CSS Started from Here  */
+.course_single_banner
+{
+    background: url(../Images/courses_banner.png);
+    min-height: 251px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.course_single_banner::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #07294d;
+    z-index: -1;
+    opacity: .7;
+    
+}
+
+.banner_content h3
+{
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.banner_content a,
+.banner_content span
+{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Course Single  Banner Section's CSS Ended Here  */
+
+
+
+
+
+
+
+/* Online_Course Info Section's CSS Started from Here  */
+.course_online_info
+{
+    background: url(../Images/about_us/bg_01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 130px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.course_online_info::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f4eaea;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+.content
+{
+    /* width: 500px; */
+}
+
+.content h2
+{
+    margin-top: -20px;
+    font-size: 45px;
+    color: #07294d;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+
+.content p
+{
+    color: #4b5158;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: normal;
+}
+
+.course_online_info .image_one
+{
+    margin-left: -30px;
+}
+
+.course_online_info .image_one img
+{
+    height: 437px;
+    width: auto;
+    margin-top: -50px;
+    border-radius: 8px;
+}
+
+.course_online_info .image_two_three
+{
+    margin-left: 30px;
+}
+
+.course_online_info .image_two_three .image_1
+{
+    width: 240px;
+    height: 220px;
+    border-radius: 8px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+} 
+
+.course_online_info .image_two_three .image_2
+{
+    width: 220px;
+    height: 170px;
+    border-radius: 8px;
+} 
+
+/* Online_Course Info  Section's CSS Ended Here  */
+
+
+
+
+
+
+/* About Us Counter  Section's CSS Started from Here  */
+.counter
+{
+    background: url(../Images/about_us/bg_02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    position: relative;
+    z-index: 0;
+}
+
+.counter::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #021d3a;
+    z-index: -1;
+    opacity: .7;
+}
+
+.counter h3
+{
+    color: #fff;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+.counter p
+{
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    
+}
+
+/* About Us Counter  Section's CSS Ended Here  */
+
+
+
+
+
+
+
+
+/* About Us  Student's Review  Section's CSS Started from Here  */
+.students_review
+{
+    background-color: #fff;
+    padding: 120px 0;
+}
+
+.students_review .section_heading
+{
+    margin-top: -60px;
+    margin-bottom: 50px;
+}
+
+.review_box
+{
+    padding: 60px 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.review_box .qoute
+{
+    color: #377dff;
+    font-size: 35px;
+    margin-bottom: 24px;
+    margin-top: -40px;
+}
+
+.review_box h4
+{
+    color: #232643;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.review_box p
+{
+    color: #4b5158;
+    font-size: 16px;
+    line-height: 2.1;
+    margin: 15px 0;padding: 0 20px;
+}
+
+.review_box .ratings
+{
+    margin: 20px 0;
+}
+
+.review_box .ratings i
+{
+    margin: 0 3px;
+    color: #f39c12;
+    font-size:15px;
+    font-weight: bolder;
+}
+
+.review_box img
+{
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* About Us  Student's Review  Section's CSS Ended Here  */
+
+
+
+
+
+
+/* Exper Teacher Section's CSS Started from Here  */
+.experts
+{
+    background-color: #f5f5f5;
+    padding: 90px 0;
+}
+
+.experts .section_heading
+{
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
+.box
+{
+    background-color: #fff;
+    width: 230px;
+}
+
+.box .box_image
+{
+    text-align: center;
+    position: relative;
+}
+
+.box .box_image img
+{
+    width: 230px;
+    height: 220px;
+}
+
+.box .box_image .overlay
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 220px;
+    width: 230px;
+    transition: .4s;
+    opacity: 0;
+    background-color: #05274b;
+}
+
+.box .box_image .overlay .icon
+{
+    margin-top: 160px;
+}
+
+.box .box_image .overlay .icon a i
+{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 2px;
+    font-weight: bolder;
+}
+
+.box .box_image .overlay .icon a i:hover
+{
+    background-color: #057aa8;
+    color: #fff;
+}
+
+.box:hover .overlay
+{
+    opacity: .7;
+    transition: all .6s ease;
+}
+
+
+.box:hover .overlay .icon a i
+{
+    transform:;
+}
+
+.box .box_image h4
+{
+    color: #05274b;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.box .box_image p
+{
+    color: #4b5158;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* Exper Teacher Section's CSS Ended Here  */
+
+
+
+
+
+
+
+
+
+/* Footer CSS Ended Here  */
+.footer
+{
+    padding: 50px 0;
+    background-color: #021d3a;
+}
+
+.footer_intro
+{
+    margin-top: -10px;
+}
+
+.footer_intro img
+{
+    margin: 25px 0;
+}
+
+.footer_intro p
+{
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.2px;
+}
+
+.supports
+{
+    margin-top: 25px;
+}
+
+.supports h4
+{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.supports li
+{
+    list-style: none;
+    margin-bottom: 30px;
+    color: #fff;
+    
+}
+
+.supports li a
+{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.supports li a:hover,
+.supports li i:hover
+{
+    color: #ecb101;
+}
+
+.resources
+{
+    margin-top: 25px;
+}
+
+.resources h4
+{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.resources li
+{
+    list-style: none;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.resources li a
+{
+    
+    color: #fff;
+    margin-left: 10px;
+}
+
+.resources li a:hover,
+.resources li i:hover
+{
+    color: #ecb101;
+}
+
+.recent_posts
+{
+    margin-top: 18px;
+}
+
+.recent_posts h4
+{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.recent_post_content .image img
+{
+    width: 80px;
+    height: 85px;
+    border-radius: 12px;
+}
+
+.recent_post_content .content
+{
+    margin-left: 20px;
+}
+
+
+.recent_post_content .content h5 a
+{
+    color: #dedede;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.recent_post_content .content p
+{
+    color: #dedede;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.last_footer
+{
+    background-color: #05274b;
+    padding: 30px;
+}
+
+.last_footer h3
+{
+    color: #fff;
+    font-size: 22px;
+}
+
+.last_footer h3 > i
+{
+    color: #54b551;
+}
+
+.last_footer h3 > a
+{
+    color: #ecb101;
+    font-size: 20px;
+}
+
+.last_footer .social_icons
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.last_footer .social_icons a i
+{
+    color: #fff;
+    font-size: 21px;
+    margin-left: 20px;
+}
+
+.last_footer .social_icons a i:hover
+{
+    color: #ecb101;
+    transition: .5s;
+}
+
+.last_footer .social_icons a .fa-facebook-f
+{
+    color: #063d85;
+    
+}
+
+.last_footer .social_icons a .fa-twitter
+{
+    color: #057aa8;
+}
+
+.last_footer .social_icons a .fa-instagram
+{
+    color: #c2354c;
+}
+
+.last_footer .social_icons a .fa-linkedin-in
+{
+    color: #066693;
+}
+
+.last_footer .social_icons a .fa-whatsapp
+{
+    color: #34b7f1;
+}
+
+.last_footer .social_icons a .fa-youtube
+{
+    color: #ff0000;
+}
+
+.last_footer .social_icons a .fa-skype
+{
+    color: #00aff0;
+}
+
+.last_footer .social_icons a .fa-snapchat
+{
+    color: #fffc00;
+}
+
+.last_footer .social_icons a .fa-reddit
+{
+    color: #ff4500;
+}
+
+/* Footer CSS Ended Here  */
+
+
+
+
+
+
+/* Scrolling Top Btn's css here  */
+
+#top_scroll
+{
+    position: fixed;
+    top: -100%;
+    right:2rem;
+    padding: 10px 18px;
+    font-size: 30px;
+    background: #ff4500;
+    color:#fff;
+    border-radius: 6px;
+    transition: 1s linear;
+    z-index: 1000;
+}
+
+#top_scroll.active
+{
+    top:calc(100% - 6rem)
+}
+
+
+
